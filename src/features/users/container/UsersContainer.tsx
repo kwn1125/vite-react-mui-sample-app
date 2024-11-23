@@ -1,7 +1,11 @@
+import { Typography } from "@mui/material";
+
 export const UsersContainer = () => {
   return (
     <>
-      <h1>Users</h1>
+      <Typography component="h1" variant="h3">
+        Users
+      </Typography>
     </>
   );
 };

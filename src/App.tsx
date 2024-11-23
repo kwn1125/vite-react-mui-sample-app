@@ -1,11 +1,15 @@
-import { CssBaseline } from "@mui/material";
+import { CssBaseline, Typography } from "@mui/material";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { UsersPage } from "./pages/users";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <h1>Hello!</h1>,
+    element: (
+      <Typography component="h1" variant="h3">
+        Hello!
+      </Typography>
+    ),
   },
   {
     path: "/users",
