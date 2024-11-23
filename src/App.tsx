@@ -1,3 +1,4 @@
+import { CssBaseline } from "@mui/material";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { UsersPage } from "./pages/users";
 
@@ -13,5 +14,10 @@ const router = createBrowserRouter([
 ]);
 
 export const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <CssBaseline />
+      <RouterProvider router={router} />
+    </>
+  );
 };
