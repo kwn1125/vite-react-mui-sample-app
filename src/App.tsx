@@ -1,6 +1,7 @@
 import { CssBaseline, Typography } from "@mui/material";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { UsersPage } from "./pages/users";
+import { UsersNewPage } from "./pages/users/new";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/users",
     element: <UsersPage />,
+  },
+  {
+    path: "/users/new",
+    element: <UsersNewPage />,
   },
 ]);
 
