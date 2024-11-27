@@ -1,7 +1,14 @@
-import { CssBaseline, Typography } from "@mui/material";
+import {
+  createTheme,
+  CssBaseline,
+  ThemeProvider,
+  Typography,
+} from "@mui/material";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { UsersPage } from "./pages/users";
 import { UsersNewPage } from "./pages/users/new";
+
+const defaultTheme = createTheme({});
 
 const router = createBrowserRouter([
   {
@@ -24,9 +31,9 @@ const router = createBrowserRouter([
 
 export const App = () => {
   return (
-    <>
+    <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <RouterProvider router={router} />
-    </>
+    </ThemeProvider>
   );
 };
