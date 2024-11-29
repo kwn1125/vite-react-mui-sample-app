@@ -8,7 +8,17 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { UsersPage } from "./pages/users";
 import { UsersNewPage } from "./pages/users/new";
 
-const defaultTheme = createTheme({});
+const defaultTheme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+        },
+      },
+    },
+  },
+});
 
 const router = createBrowserRouter([
   {
