@@ -1,6 +1,6 @@
 import { DataGrid, type GridColDef, type GridRowsProp } from "@mui/x-data-grid";
 
-export const UsersTable = () => {
+export const UsersDataGrid = () => {
   const rows: GridRowsProp = [
     {
       id: 1,

@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { UsersTable } from "../presenter/UsersTable";
+import { UsersDataGrid } from "../presenter/UsersDataGrid";
 
 export const UsersContainer = () => {
   return (
@@ -13,7 +13,7 @@ export const UsersContainer = () => {
           Add user
         </Button>
       </Box>
-      <UsersTable />
+      <UsersDataGrid />
     </>
   );
 };
