@@ -3,6 +3,19 @@ import { Link } from "react-router-dom";
 import { UsersDataGrid } from "../presenter/UsersDataGrid";
 
 export const UsersContainer = () => {
+  const users = [
+    {
+      id: 1,
+      name: "Lionel Messi",
+      email: "lionel.messi@example.com",
+    },
+    {
+      id: 2,
+      name: "Cristiano Ronaldo",
+      email: "cristiano.ronaldo@example.com",
+    },
+  ];
+
   return (
     <>
       <Box display="flex" alignItems="center">
@@ -13,7 +26,7 @@ export const UsersContainer = () => {
           Add user
         </Button>
       </Box>
-      <UsersDataGrid />
+      <UsersDataGrid rows={users} />
     </>
   );
 };

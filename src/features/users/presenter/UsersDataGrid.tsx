@@ -1,19 +1,11 @@
-import { DataGrid, type GridColDef, type GridRowsProp } from "@mui/x-data-grid";
+import { DataGrid, type GridColDef } from "@mui/x-data-grid";
+import type { User } from "../../../domains/user";
 
-export const UsersDataGrid = () => {
-  const rows: GridRowsProp = [
-    {
-      id: 1,
-      name: "Lionel Messi",
-      email: "lionel.messi@example.com",
-    },
-    {
-      id: 2,
-      name: "Cristiano Ronaldo",
-      email: "cristiano.ronaldo@example.com",
-    },
-  ];
+type Props = {
+  rows: User[];
+};
 
+export const UsersDataGrid = (props: Props) => {
   const columns: GridColDef[] = [
     {
       field: "name",
@@ -27,5 +19,5 @@ export const UsersDataGrid = () => {
     },
   ];
 
-  return <DataGrid rows={rows} columns={columns} />;
+  return <DataGrid rows={props.rows} columns={columns} />;
 };
