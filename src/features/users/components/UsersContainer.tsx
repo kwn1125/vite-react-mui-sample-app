@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { UsersDataGrid } from "../presenter/UsersDataGrid";
+import { UsersDataGrid } from "./UsersDataGrid";
 
 export const UsersContainer = () => {
   const users = [

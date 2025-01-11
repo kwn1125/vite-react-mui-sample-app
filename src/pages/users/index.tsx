@@ -1,4 +1,4 @@
-import { UsersContainer } from "../../features/users/container/UsersContainer";
+import { UsersContainer } from "../../features/users/components/UsersContainer";
 
 export const UsersPage = () => {
   return <UsersContainer />;
